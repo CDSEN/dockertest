@@ -1,0 +1,6 @@
+FROM ubuntu
+WORKDIR /tmp
+RUN echo "Hi Dockerimage" > /tmp/newfile
+ENV myname Deep
+COPY testfile1 /tmp
+ADD test.tar.gz /tmp
